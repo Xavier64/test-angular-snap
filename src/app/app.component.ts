@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FaceSnap } from './models/face-snap.model';
+
 
 @Component({
   selector: 'app-root',
@@ -9,33 +9,9 @@ import { FaceSnap } from './models/face-snap.model';
 
 
 export class AppComponent implements OnInit {
-  mySnap!: FaceSnap;
-  myOtherSnap!: FaceSnap;
-  myLastSnap!: FaceSnap;
 
-  ngOnInit() {
-    this.mySnap = new FaceSnap(
-      'Archibald',
-      'Mon meilleur ami depuis tout petit !',
-      'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-      new Date(),
-      0
-    );
-    this.myOtherSnap = new FaceSnap(
-      'Auric' ,
-      'Celui-là' ,
-      'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-      new Date(),
-      0
-    );
-    this.myLastSnap = new FaceSnap(
-      'Culaire' ,
-      'L\'autre' ,
-      'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-      new Date(),
-      0
-    );
+    ngOnInit(): void {
 
+    }
 
-  }
 }
